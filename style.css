@@ -20,8 +20,9 @@ body {
 }
 
 header {
-  background-color: var(--orange);
-  padding: 1rem;
+  background-color: rgba(195, 232, 189, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -50,7 +51,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--dark-blue);
+  color: var(--orange);
   font-weight: bold;
   transition: color 0.3s ease;
 }
