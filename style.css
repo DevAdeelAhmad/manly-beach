@@ -82,6 +82,7 @@ section h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: var(--dark-blue);
+  font-family: "Bebas Neue", cursive;
 }
 
 .content {
@@ -148,92 +149,23 @@ section h2 {
   .item {
     flex-basis: 100%;
   }
-  
+
   section h2 {
     font-size: 2rem;
   }
-  
+
   .item h3 {
     font-size: 1.3rem;
   }
-  
+
   .item p {
     font-size: 0.9rem;
   }
-  
+
   .btn {
     font-size: 1rem;
     padding: 0.6rem 1.2rem;
   }
-}
-
-main {
-  padding-top: 80px; /* Add this line to account for the fixed header */
-}
-
-#hero {
-  position: relative;
-  height: calc(100vh - 80px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--beige);
-  overflow: hidden;
-  margin-top: -80px; /* Add this line to offset the main padding */
-}
-
-#hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.hero-content {
-  position: relative; /* Add this line */
-  background-color: rgba(29, 53, 87, 0.7);
-  padding: 2rem;
-  border-radius: 10px;
-  z-index: 1; /* Add this line */
-}
-
-.hero-content h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-}
-
-#location,
-#manly-beaches,
-#corso-wharf,
-#manly-parks,
-#museums {
-  background-color: var(--light-green);
-  padding: 4rem 1rem;
-}
-
-#location h2,
-#history h2,
-#manly-beaches h2,
-#corso-wharf h2,
-#manly-parks h2,
-#museums h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.content .btn {
-  display: block;
-  width: fit-content;
-  margin: 2rem auto 0;
 }
 
 footer {
@@ -276,7 +208,60 @@ footer {
   color: var(--orange);
 }
 
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .social-icons {
   display: flex;
   gap: 1rem;
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--beige);
+  overflow: hidden;
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  /* background-color: rgba(29, 53, 87, 0.7); */
+  /* border-radius: 10px; */
+  padding: 2rem;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
 }
