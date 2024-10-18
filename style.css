@@ -1,0 +1,282 @@
+:root {
+  --orange: #f4a261;
+  --light-blue: #a8dadc;
+  --dark-blue: #1d3557;
+  --light-green: #c3e8bd;
+  --beige: #f1faee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: var(--dark-blue);
+  background-color: var(--beige);
+}
+
+header {
+  background-color: var(--orange);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--beige);
+}
+
+section {
+  padding: 4rem 0;
+  background-color: var(--beige);
+}
+
+section:nth-child(even) {
+  background-color: var(--light-green);
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--dark-blue);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.item {
+  flex-basis: calc(33.333% - 2rem);
+  max-width: 350px;
+  margin-bottom: 2rem;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item h3 {
+  padding: 1rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+}
+
+.item p {
+  padding: 0 1rem 1rem;
+  font-size: 1rem;
+  color: var(--dark-blue);
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: var(--orange);
+  color: var(--dark-blue);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--beige);
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex-basis: 100%;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+  }
+  
+  .item h3 {
+    font-size: 1.3rem;
+  }
+  
+  .item p {
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+main {
+  padding-top: 80px; /* Add this line to account for the fixed header */
+}
+
+#hero {
+  position: relative;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--beige);
+  overflow: hidden;
+  margin-top: -80px; /* Add this line to offset the main padding */
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative; /* Add this line */
+  background-color: rgba(29, 53, 87, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  z-index: 1; /* Add this line */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+#location,
+#manly-beaches,
+#corso-wharf,
+#manly-parks,
+#museums {
+  background-color: var(--light-green);
+  padding: 4rem 1rem;
+}
+
+#location h2,
+#history h2,
+#manly-beaches h2,
+#corso-wharf h2,
+#manly-parks h2,
+#museums h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.content .btn {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: var(--beige);
+  padding: 2rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.footer-section {
+  flex: 1;
+  margin-bottom: 1rem;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style-type: none;
+}
+
+.footer-section a {
+  color: var(--beige);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--orange);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
