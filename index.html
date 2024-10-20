@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -18,245 +22,198 @@
             <img src="/assets/logo.png" alt="Manly Beach Logo" />
           </a>
         </div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#places">Places of Interest</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#eat-drink-stay">Foodie and Stay</a></li>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#top" id="home-link">Home</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#main-streets">Main Streets</a></li>
+          <li><a href="#cultural">Cultural</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="hero">
-        <video autoplay muted loop id="hero-video">
+        <video autoplay muted loop playsinline id="hero-video">
           <source src="/assets/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div class="hero-content">
-          <h1>Welcome to Manly Beach</h1>
+          <h1>Manly Beach</h1>
           <p>Gateway to the Northern Beaches of Sydney</p>
+        </div>
+      </section>
+
+      <section style="background-color: #a8dadc" id="welcome">
+        <div class="section-container">
+          <h2>Welcome to Manly Beach</h2>
+          <p>
+            Hello! Welcome to beautiful Manly, a World Surfing Reserve and the
+            gateway to the Northern Beaches. The Northern Beaches offers an
+            array of ocean beaches, coastal rock pools, a 36km coastal walkway,
+            five aquatic reserves brimming with sea life, a national surfing
+            reserve at Narrabeen and so much more. Come and explore this
+            extraordinary destination right on Sydney's doorstep.
+          </p>
+          <a href="#" class="btn">Discover More</a>
         </div>
       </section>
 
       <section id="location">
         <div class="section-container">
-          <h2>Location of Manly</h2>
           <div class="content">
-            <div class="item">
-              <img
-                src="/assets/manly-beach.jpeg"
-                alt="Map of Manly"
-              />
-              <h3>Gateway to the Northern Beaches</h3>
+            <div class="text">
+              <h2>Location</h2>
               <p>
-                Manly is the first beach-side suburb you encounter in northern
-                Sydney coming from Sydney CBD.
+                Manly Beach is located in the Northern Beaches region of Sydney,
+                Australia. It's easily accessible by ferry from Circular Quay,
+                offering a scenic 30-minute ride across Sydney Harbour. The
+                beach stretches for about 1.5 kilometers, flanked by Norfolk
+                Island pine trees and a vibrant promenade.
               </p>
             </div>
-            <div class="item">
-              <img
-                src="/assets/manly-beach1.jpg"
-                alt="Manly Beach"
-              />
-              <h3>Vibrant Destination</h3>
-              <p>
-                A must-visit place frequented by a youthful and international
-                population, famous for being the first Australian beach to hold
-                a world surfing contest.
-              </p>
+            <div class="image">
+              <img src="/assets/manly-beach.jpeg" alt="Manly Beach Location" />
             </div>
-            <div class="item">
-              <img
-                src="/assets/manly-beach.jpeg"
-                alt="Natural Attractions"
-              />
-              <h3>Natural Gifts</h3>
-              <p>
-                Enjoy tranquil beaches, rich marine reserves, National Parks,
-                lagoons, and hidden natural asset gems.
-              </p>
-            </div>
-            <!-- <a href="location.html" class="btn">Explore Manly's Location</a> -->
           </div>
         </div>
       </section>
 
-      <section id="history">
+      <section style="background-color: #a8dadc" id="main-streets">
         <div class="section-container">
-          <h2>Cultural History and Heritage</h2>
-          <div class="content">
-            <div class="item">
-              <img
-                src="/assets/manly-beach.jpeg"
-                alt="Indigenous History"
-              />
-              <h3>Indigenous Roots</h3>
+          <div class="content reverse">
+            <div class="text">
+              <h2>Main Streets</h2>
               <p>
-                The Cannalgal and Kayaimai communities originally inhabited
-                Manly.
+                The Corso is Manly's main pedestrian thoroughfare, connecting
+                the harbor to the ocean beach. It's lined with shops, cafes, and
+                restaurants, creating a lively atmosphere. Other notable streets
+                include North Steyne and South Steyne, which run parallel to the
+                beach, offering stunning ocean views and access to various
+                amenities.
               </p>
             </div>
-            <div class="item">
-              <img
-                src="/assets/manly-beach1.jpg"
-                alt="Colonial History"
-              />
-              <h3>Colonial Era</h3>
-              <p>
-                In 1788, Arthur Philip named the area "Manly" due to the
-                "confidence and manly behavior" of the Aboriginal people.
-              </p>
+            <div class="image">
+              <img src="/assets/manly-beach1.jpg" alt="The Corso, Manly" />
             </div>
-            <div class="item">
-              <img
-                src="/assets/manly-beach.jpeg"
-                alt="Modern Manly"
-              />
-              <h3>Modern Development</h3>
-              <p>
-                From a Victorian village to a vibrant suburb, Manly has evolved
-                into a diverse community dependent on tourism.
-              </p>
-            </div>
-            <!-- <a href="history.html" class="btn">Discover Manly's History</a> -->
           </div>
         </div>
       </section>
 
-      <section id="places">
+      <section id="cultural">
         <div class="section-container">
-          <h2>Places of Interest</h2>
           <div class="content">
-            <div class="item">
-              <img src="/assets/manly-beach.jpeg" alt="Manly Beach" />
-              <h3>Manly Beach</h3>
+            <div class="text">
+              <h2>Cultural Significance</h2>
               <p>
-                The iconic Manly Beach, famous for its golden sands and perfect
-                waves.
+                Manly has a rich indigenous history, being the traditional land
+                of the Guringai people. The area was named by Captain Arthur
+                Phillip in 1788 for the confident and manly behavior of the
+                Aboriginal people he encountered. Today, Manly is a melting pot
+                of cultures, known for its laid-back beach lifestyle, surfing
+                culture, and vibrant arts scene.
               </p>
             </div>
-            <div class="item">
-              <img src="/assets/manly-beach1.jpg" alt="Shelly Beach" />
-              <h3>Shelly Beach</h3>
-              <p>
-                A beautiful, sheltered beach perfect for snorkeling and picnics.
-              </p>
+            <div class="image">
+              <img src="/assets/manly-beach.jpeg" alt="Manly Cultural Event" />
             </div>
-            <div class="item">
-              <img src="/assets/manly-beach.jpeg" alt="North Head" />
-              <h3>North Head</h3>
-              <p>
-                Offering stunning views of Sydney Harbour and the city skyline.
-              </p>
-            </div>
-          </div>
-          <a href="places.html" class="btn">Explore More Places</a>
-        </div>
-      </section>
-
-      <section id="activities">
-        <div class="section-container">
-          <h2>Activities</h2>
-          <div class="content">
-            <div class="item">
-              <img src="/assets/manly-beach.jpeg" alt="Surfing" />
-              <h3>Surfing</h3>
-              <p>
-                Catch some waves at one of Australia's most famous surfing
-                spots.
-              </p>
-            </div>
-            <div class="item">
-              <img src="/assets/manly-beach1.jpg" alt="Coastal Walk" />
-              <h3>Coastal Walk</h3>
-              <p>Enjoy the scenic Manly to Spit Bridge Coastal Walk.</p>
-            </div>
-            <div class="item">
-              <img src="/assets/manly-beach.jpeg" alt="Snorkeling" />
-              <h3>Snorkeling</h3>
-              <p>
-                Explore the underwater world at Cabbage Tree Bay Aquatic
-                Reserve.
-              </p>
-            </div>
-            <a href="activities.html" class="btn">Discover More Activities</a>
           </div>
         </div>
       </section>
-
-      <section id="events">
+      <section id="explore">
         <div class="section-container">
-          <h2>Events</h2>
-          <div class="content">
-            <div class="item">
-              <img src="/assets/manly-beach.jpeg" alt="Australia Day" />
-              <h3>Australia Day Celebrations</h3>
-              <p>
-                Join the festivities on January 26th with parades, concerts, and
-                fireworks.
-              </p>
+          <h2>Explore Manly Beach</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="/assets/manly-beach.jpeg" alt="Places of Interest" />
+              <div class="card-overlay">
+                <h3>Places of Interest</h3>
+                <p>Discover Manly's iconic landmarks and hidden gems.</p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
             </div>
-            <div class="item">
-              <img
-                src="/assets/manly-beach1.jpg"
-                alt="Food and Wine Festival"
-              />
-              <h3>Manly Food and Wine Festival</h3>
-              <p>
-                Indulge in local cuisine and wines at this annual gastronomic
-                event.
-              </p>
+            <div class="card">
+              <img src="/assets/manly-beach1.jpg" alt="Activities" />
+              <div class="card-overlay">
+                <h3>Activities</h3>
+                <p>Experience thrilling adventures and relaxing pastimes.</p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
             </div>
-            <div class="item">
-              <img src="/assets/manly-beach.jpeg" alt="Surf Competition" />
-              <h3>Australian Open of Surfing</h3>
-              <p>
-                Watch world-class surfers compete in this exciting annual event.
-              </p>
+            <div class="card">
+              <img src="/assets/manly-beach.jpeg" alt="Events" />
+              <div class="card-overlay">
+                <h3>Events</h3>
+                <p>Join exciting local events and festivals year-round.</p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
             </div>
-            <a href="events.html" class="btn">See All Events</a>
+            <div class="card">
+              <img src="/assets/manly-beach1.jpg" alt="Foodie and Stay" />
+              <div class="card-overlay">
+                <h3>Foodie & Stay</h3>
+                <p>
+                  Indulge in local cuisine and find comfortable accommodations.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
-      <section id="eat-drink-stay">
+      <section id="getting-there">
         <div class="section-container">
-          <h2>Foodie and Stay</h2>
-          <div class="content">
-            <div class="item">
-              <img src="/assets/manly-beach.jpeg" alt="Restaurant" />
-              <h3>Waterfront Dining</h3>
+          <div class="getting-there-content">
+            <div class="transportation-options">
+              <h2>How to Get There?</h2>
               <p>
-                Enjoy fresh seafood and stunning views at our beachside
-                restaurants.
+                Nowadays there are multiple ways of transportation, but a
+                recommendation would be taking the 30-minute scenic ferry ride
+                from Circular Quay.
               </p>
+              <div class="transport-icons">
+                <div class="transport-item">
+                  <img src="/assets/boat.png" alt="Ferry" />
+                  <span>Ferry</span>
+                </div>
+                <div class="transport-item">
+                  <img src="/assets/bus.png" alt="Bus" />
+                  <span>Bus</span>
+                </div>
+                <div class="transport-item">
+                  <img src="/assets/bike.png" alt="Bike" />
+                  <span>Bike</span>
+                </div>
+                <div class="transport-item">
+                  <img src="/assets/car.png" alt="Car" />
+                  <span>Car</span>
+                </div>
+                <div class="transport-item">
+                  <img src="/assets/walk.png" alt="Walk" />
+                  <span>Walk</span>
+                </div>
+              </div>
             </div>
-            <div class="item">
-              <img src="/assets/manly-beach1.jpg" alt="Cafe" />
-              <h3>Cozy Cafes</h3>
-              <p>
-                Start your day with a perfect coffee at one of our many charming
-                cafes.
-              </p>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.7330976776366!2d151.28518731521252!3d-33.79719998067789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ab1e90a4b9f9%3A0x5017d681632c6c0!2sManly%20Beach!5e0!3m2!1sen!2sau!4v1650000000000!5m2!1sen!2sau"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
             </div>
-            <div class="item">
-              <img src="/assets/manly-beach.jpeg" alt="Hotel" />
-              <h3>Beachfront Accommodation</h3>
-              <p>
-                Stay in comfort with a range of options from luxury hotels to
-                cozy B&Bs.
-              </p>
-            </div>
-            <a href="eat-drink-stay.html" class="btn"
-              >Find Places to Eat, Drink & Stay</a
-            >
           </div>
         </div>
       </section>
     </main>
-
     <footer>
       <div class="footer-container">
         <div class="footer-section">
@@ -270,10 +227,9 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#places">Places of Interest</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#eat-drink-stay">Foodie and Stay</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#main-streets">Main Streets</a></li>
+            <li><a href="#cultural">Cultural</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -285,10 +241,18 @@
         <div class="footer-section">
           <h4>Follow Us</h4>
           <div class="social-icons">
-            <a href="#" class="social-icon">FB</a>
-            <a href="#" class="social-icon">TW</a>
-            <a href="#" class="social-icon">IG</a>
-            <a href="#" class="social-icon">YT</a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -296,7 +260,6 @@
         <p>&copy; 2024 Manly Beach. All rights reserved.</p>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
