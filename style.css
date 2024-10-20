@@ -370,23 +370,18 @@ footer {
 }
 
 #getting-there {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: var(--beige);
 }
 
 .getting-there-content {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .transportation-options {
-  flex: 1;
   text-align: left;
-}
-
-.transportation-options h2 {
-  margin-bottom: 1rem;
 }
 
 .transportation-options p {
@@ -397,44 +392,42 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin-top: 1rem;
+  justify-content: start;
 }
 
 .transport-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
 }
 
-.transport-item img {
-  width: 50px;
-  height: 50px;
+.transport-item i {
+  font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: var(--dark-blue);
 }
 
 .map-container {
-  flex: 1;
+  width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .getting-there-content {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .transportation-options {
+    flex: 1;
   }
 
   .map-container {
-    order: -1;
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .transport-icons {
-    grid-template-columns: repeat(2, 1fr);
+    flex: 1;
   }
 }
 
 @media (max-width: 480px) {
   .transport-icons {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
