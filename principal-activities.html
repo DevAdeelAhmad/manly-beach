@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Things to Do in Manly - Principal Activities</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="principal-activities">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="/assets/logo.png" alt="Manly Beach Logo" />
+          </a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#ground-activities">Ground Activities</a></li>
+          <li><a href="#water-activities">Water Activities</a></li>
+          <li><a href="#find-more">Find More</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-background">
+          <video autoplay muted loop playsinline id="hero-video">
+            <source src="/assets/hero-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="hero-content top-left">
+          <h1>THINGS TO DO IN MANLY</h1>
+        </div>
+      </section>
+
+      <section id="quote">
+        <div class="section-container">
+          <blockquote>
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Manly: Where the beach meets the city, and adventure awaits at
+              every corner.
+            </p>
+            <i class="fas fa-quote-right"></i>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="activities-intro">
+        <div class="section-container">
+          <p>
+            Manly offers a diverse range of activities for visitors and locals
+            alike. From stunning coastal walks to exciting water sports, there's
+            something for everyone in this vibrant beachside suburb.
+          </p>
+          <div class="activity-buttons">
+            <a href="#ground-activities" class="btn">Ground Activities</a>
+            <a href="#water-activities" class="btn">Water Activities</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ground-activities">
+        <div class="section-container">
+          <h2>Ground Activities</h2>
+          <div class="activity-stepper">
+            <div class="step" data-target="walks-hike">
+              <div class="step-circle">
+                <i class="fas fa-hiking"></i>
+              </div>
+              <p>Walks/Hike</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-target="cycling">
+              <div class="step-circle">
+                <i class="fas fa-bicycle"></i>
+              </div>
+              <p>Cycling</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-target="picnic-barbecue">
+              <div class="step-circle">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <p>Picnic/Barbecue</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-target="shopping">
+              <div class="step-circle">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <p>Shopping</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="walks-hike" class="activity-section">
+        <div class="section-container">
+          <h2>Walks and Hikes</h2>
+          <div class="carousel-container">
+            <div class="carousel"></div>
+            <button class="carousel-button prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="cycling" class="activity-section">
+        <div class="section-container">
+          <h2>Cycling</h2>
+          <div class="carousel-container">
+            <div class="carousel"></div>
+            <button class="carousel-button prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="picnic-barbecue"
+        style="background-color: #a8dadc"
+        class="activity-section"
+      >
+        <div class="section-container">
+          <h2>Picnic and Barbecue</h2>
+          <div class="carousel-container">
+            <div class="carousel"></div>
+            <button class="carousel-button prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="shopping" class="activity-section">
+        <div class="section-container">
+          <h2>Shopping</h2>
+          <div class="carousel-container">
+            <div class="carousel"></div>
+            <button class="carousel-button prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="water-activities">
+        <div class="section-container">
+          <h2>Water Activities</h2>
+          <div class="activity-stepper">
+            <div class="step" data-target="swimming">
+              <div class="step-circle">
+                <i class="fas fa-swimmer"></i>
+              </div>
+              <p>Swimming</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-target="surf">
+              <div class="step-circle">
+                <i class="fas fa-water"></i>
+              </div>
+              <p>Surf</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-target="snorkel-dive">
+              <div class="step-circle">
+                <i class="fas fa-fish"></i>
+              </div>
+              <p>Snorkel & Dive</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-target="kayak-paddle">
+              <div class="step-circle">
+                <i class="fas fa-ship"></i>
+              </div>
+              <p>Kayak & Paddle</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-target="sailing">
+              <div class="step-circle">
+                <i class="fas fa-sailboat"></i>
+              </div>
+              <p>Sailing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="swimming" class="activity-section">
+        <div class="section-container">
+          <h3>Swimming</h3>
+          <div class="activity-content">
+            <div class="activity-image">
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Swimming at Manly Beach"
+              />
+            </div>
+            <div class="activity-text">
+              <p>
+                Manly Beach offers excellent swimming conditions with its
+                crystal-clear waters and gentle waves. The beach is patrolled by
+                lifeguards, ensuring a safe environment for swimmers of all ages
+                and abilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="surf"
+        style="background-color: #a8dadc"
+        class="activity-section"
+      >
+        <div class="section-container">
+          <h3>Surf</h3>
+          <div class="surf-grid">
+            <div class="surf-small-images">
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Surfing at Manly Beach 1"
+              />
+              <img
+                src="/assets/manly-beach1.jpg"
+                alt="Surfing at Manly Beach 2"
+              />
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Surfing at Manly Beach 3"
+              />
+              <img
+                src="/assets/manly-beach1.jpg"
+                alt="Surfing at Manly Beach 4"
+              />
+            </div>
+            <div class="surf-large-image">
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Surfing at Manly Beach"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="snorkel-dive" class="activity-section">
+        <div class="section-container">
+          <h3>Snorkel & Dive</h3>
+          <div class="surf-grid reverse">
+            <div class="surf-large-image">
+              <img
+                src="/assets/manly-beach1.jpg"
+                alt="Snorkeling and Diving at Manly Beach"
+              />
+            </div>
+            <div class="surf-small-images">
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Snorkeling at Manly Beach 1"
+              />
+              <img
+                src="/assets/manly-beach1.jpg"
+                alt="Snorkeling at Manly Beach 2"
+              />
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Diving at Manly Beach 1"
+              />
+              <img
+                src="/assets/manly-beach1.jpg"
+                alt="Diving at Manly Beach 2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="kayak-paddle"
+        style="background-color: #a8dadc"
+        class="activity-section"
+      >
+        <div class="section-container">
+          <h3>Kayak & Paddle</h3>
+          <div class="surf-grid">
+            <div class="surf-small-images">
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Kayaking at Manly Beach 1"
+              />
+              <img
+                src="/assets/manly-beach1.jpg"
+                alt="Kayaking at Manly Beach 2"
+              />
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Paddleboarding at Manly Beach 1"
+              />
+              <img
+                src="/assets/manly-beach1.jpg"
+                alt="Paddleboarding at Manly Beach 2"
+              />
+            </div>
+            <div class="surf-large-image">
+              <img
+                src="/assets/manly-beach.jpeg"
+                alt="Kayaking and Paddleboarding at Manly Beach"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sailing" class="activity-section">
+        <div class="section-container">
+          <h3>Sailing</h3>
+          <div class="activity-content">
+            <div class="activity-image">
+              <img
+                src="/assets/manly-beach1.jpg"
+                alt="Sailing at Manly Beach"
+              />
+            </div>
+            <div class="activity-text">
+              <p>
+                Experience the thrill of sailing in Manly's beautiful waters.
+                Whether you're a beginner or an experienced sailor, Manly offers
+                various sailing opportunities and schools to help you enjoy this
+                exciting water activity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="find-more">
+        <div class="section-container">
+          <h2>Where to Find More</h2>
+          <div class="vertical-stepper">
+            <div class="v-step">
+              <div class="v-step-circle"></div>
+              <a
+                href="https://www.tripadvisor.com/Tourism-g552103-Manly_Greater_Sydney_New_South_Wales-Vacations.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >TripAdvisor - Manly</a
+              >
+            </div>
+            <div class="v-step">
+              <div class="v-step-circle"></div>
+              <a
+                href="https://www.visitnsw.com/destinations/sydney/sydney-north/manly"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit NSW - Manly</a
+              >
+            </div>
+            <div class="v-step">
+              <div class="v-step-circle"></div>
+              <a
+                href="https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/manly"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Northern Beaches Council - Manly</a
+              >
+            </div>
+            <div class="v-step">
+              <div class="v-step-circle"></div>
+              <a
+                href="https://www.manlyaustralia.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Manly Australia</a
+              >
+            </div>
+            <div class="v-step">
+              <div class="v-step-circle"></div>
+              <a
+                href="https://www.timeout.com/sydney/things-to-do/manly-area-guide"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Time Out - Manly Area Guide</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/assets/logo.png" alt="Manly Beach Logo" />
+          <p class="footer-description">
+            Manly Beach, a picturesque coastal suburb of Sydney, offers a
+            perfect blend of surf, sand, and vibrant local culture. Discover
+            endless activities and breathtaking views in this iconic Australian
+            destination.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Top</a></li>
+            <li><a href="#ground-activities">Ground Activities</a></li>
+            <li><a href="#water-activities">Water Activities</a></li>
+            <li><a href="#find-more">Find More</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Manly Beach. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const video = document.getElementById("hero-video");
+        video.play().catch((error) => {
+          console.log("Auto-play was prevented");
+        });
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        });
+        document.querySelectorAll(".nav-menu li a").forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          });
+        });
+        const activityData = {
+          "walks-hike": [
+            {
+              name: "Manly to Spit Bridge Coastal Walk",
+              description: "Scenic coastal walk with stunning views.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "North Head Sanctuary Loop",
+              description:
+                "Historic site with panoramic views of Sydney Harbour.",
+              image: "manly-beach1.jpg",
+            },
+            {
+              name: "Manly Dam Circuit",
+              description: "Bushland trail around Manly Dam.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "Cabbage Tree Bay Eco-Sculpture Walk",
+              description: "Short walk with underwater sculptures.",
+              image: "manly-beach1.jpg",
+            },
+            {
+              name: "Manly to Shelly Beach Walk",
+              description: "Easy coastal walk with beautiful views.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "Fairfax Walk",
+              description: "Easy loop walk with stunning ocean views.",
+              image: "manly-beach1.jpg",
+            },
+          ],
+          cycling: [
+            {
+              name: "Manly Beach Bike Path",
+              description: "Scenic ride along the beachfront.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "North Head Circuit",
+              description: "Challenging ride with panoramic views.",
+              image: "manly-beach1.jpg",
+            },
+            {
+              name: "Manly Dam Mountain Bike Trail",
+              description: "Popular mountain biking destination.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "Eastern Hill Bike Track",
+              description: "Family-friendly bike track with ocean views.",
+              image: "manly-beach1.jpg",
+            },
+            {
+              name: "Manly Lagoon Loop",
+              description: "Easy ride around Manly Lagoon.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "Bike to Dee Why",
+              description: "Coastal ride to neighboring Dee Why Beach.",
+              image: "manly-beach1.jpg",
+            },
+          ],
+          "picnic-barbecue": [
+            {
+              name: "Shelly Beach",
+              description:
+                "Popular spot with BBQ facilities and picnic tables.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "North Head Sanctuary",
+              description: "Scenic picnic spots with harbor views.",
+              image: "manly-beach1.jpg",
+            },
+            {
+              name: "Manly Dam Reserve",
+              description: "Picnic areas and BBQ facilities by the water.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "Little Manly Point Park",
+              description: "Quiet park with BBQs and harbor views.",
+              image: "manly-beach1.jpg",
+            },
+            {
+              name: "Forty Baskets Beach",
+              description: "Secluded beach with picnic facilities.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "Clontarf Reserve",
+              description: "Family-friendly park with BBQs and playground.",
+              image: "manly-beach1.jpg",
+            },
+          ],
+          shopping: [
+            {
+              name: "Manly Corso",
+              description: "Pedestrian mall with shops and cafes.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "Manly Wharf",
+              description: "Waterfront shopping and dining precinct.",
+              image: "manly-beach1.jpg",
+            },
+            {
+              name: "Manly Market Place",
+              description: "Fresh produce and gourmet food market.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "Manly Seaside Flea Market",
+              description: "Weekend market with unique finds.",
+              image: "manly-beach1.jpg",
+            },
+            {
+              name: "Manly Emporium",
+              description: "Boutique shopping center with local designers.",
+              image: "manly-beach.jpeg",
+            },
+            {
+              name: "The Manly Bookshop",
+              description: "Independent bookstore with a great selection.",
+              image: "manly-beach1.jpg",
+            },
+          ],
+        };
+        function createCarousel(sectionId) {
+          const carousel = document.querySelector(`#${sectionId} .carousel`);
+          const data = activityData[sectionId];
+          data.forEach((item) => {
+            const card = document.createElement("div");
+            card.className = "carousel-card";
+            card.innerHTML = `
+          <img src="/assets/${item.image}" alt="${item.name}">
+          <div class="carousel-card-content">
+            <h3>${item.name}</h3>
+            <p>${item.description}</p>
+          </div>
+        `;
+            carousel.appendChild(card);
+          });
+          const prevButton = document.querySelector(`#${sectionId} .prev`);
+          const nextButton = document.querySelector(`#${sectionId} .next`);
+          let currentIndex = 0;
+          function updateCarousel() {
+            const cardWidth =
+              carousel.querySelector(".carousel-card").offsetWidth + 20;
+            carousel.style.transform = `translateX(-${
+              currentIndex * cardWidth
+            }px)`;
+          }
+          prevButton.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + data.length) % data.length;
+            updateCarousel();
+          });
+          nextButton.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % data.length;
+            updateCarousel();
+          });
+        }
+        createCarousel("walks-hike");
+        createCarousel("cycling");
+        createCarousel("picnic-barbecue");
+        createCarousel("shopping");
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (this.getAttribute("href") === "#top") {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            } else {
+              document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

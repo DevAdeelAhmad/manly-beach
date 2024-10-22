@@ -35,7 +35,6 @@
         </ul>
       </nav>
     </header>
-
     <main>
       <section id="hero">
         <div class="hero-background">
@@ -47,7 +46,6 @@
         <div class="hero-content">
           <h1>MANLY BEACH</h1>
           <p>Gateway to the Northern Beaches of Sydney</p>
-          <a href="#" class="btn">Learn More</a>
         </div>
       </section>
 
@@ -136,7 +134,7 @@
               <div class="card-overlay">
                 <h3>Places of Interest</h3>
                 <p>Discover Manly's iconic landmarks and hidden gems.</p>
-                <a href="#" class="btn">Learn More</a>
+                <a href="principal-places.html" class="btn">Learn More</a>
               </div>
             </div>
             <div class="card">
@@ -144,7 +142,7 @@
               <div class="card-overlay">
                 <h3>Activities</h3>
                 <p>Experience thrilling adventures and relaxing pastimes.</p>
-                <a href="#" class="btn">Learn More</a>
+                <a href="principal-activities.html" class="btn">Learn More</a>
               </div>
             </div>
             <div class="card">
@@ -219,50 +217,71 @@
     </main>
     <footer>
       <div class="footer-container">
-        <div class="footer-section">
-          <h4>About Manly Beach</h4>
-          <p>
-            Discover the beauty and excitement of Manly Beach, a gateway to
-            Sydney's Northern Beaches.
+        <div class="footer-logo">
+          <img src="/assets/logo.png" alt="Manly Beach Logo" />
+          <p class="footer-description">
+            Manly Beach, a picturesque coastal suburb of Sydney, offers a
+            perfect blend of surf, sand, and vibrant local culture. Discover
+            endless activities and breathtaking views in this iconic Australian
+            destination.
           </p>
         </div>
-        <div class="footer-section">
+        <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#top">Home</a></li>
             <li><a href="#location">Location</a></li>
             <li><a href="#main-streets">Main Streets</a></li>
             <li><a href="#cultural">Cultural</a></li>
           </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Contact Us</h4>
-          <p>Email: info@manlybeach.com</p>
-          <p>Phone: (02) 9999 9999</p>
-          <p>Address: 1 The Corso, Manly NSW 2095</p>
-        </div>
-        <div class="footer-section">
-          <h4>Follow Us</h4>
-          <div class="social-icons">
-            <a href="#" class="social-icon">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-x-twitter"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2024 Manly Beach. All rights reserved.</p>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const video = document.getElementById("hero-video");
+        video.play().catch((error) => {
+          console.log("Auto-play was prevented");
+        });
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        });
+        document.querySelectorAll(".nav-menu li a").forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          });
+        });
+        const homeLink = document.getElementById("home-link");
+        homeLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (this.getAttribute("href") === "#top") {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            } else {
+              document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
