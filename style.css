@@ -535,11 +535,14 @@ footer {
 .principal-places .place-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .principal-places .place-card {
   text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .principal-places .place-card h3 {
