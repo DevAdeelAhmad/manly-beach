@@ -114,14 +114,80 @@
       <section id="walks-hike" class="activity-section">
         <div class="section-container">
           <h2>Walks and Hikes</h2>
-          <div class="carousel-container">
-            <div class="carousel"></div>
-            <button class="carousel-button prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-button next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+          <div class="carousel-wrapper">
+            <input type="radio" name="walks" id="walks-s1" checked>
+            <input type="radio" name="walks" id="walks-s2">
+            
+            <div class="carousel-cards">
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img
+                    src="/assets/manly-beach.jpeg"
+                    alt="Manly to Spit Bridge Walk"
+                  />
+                  <div class="carousel-card-content">
+                    <h3>Manly to Spit Bridge Coastal Walk</h3>
+                    <p>Scenic coastal walk with stunning views.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="North Head Walk" />
+                  <div class="carousel-card-content">
+                    <h3>North Head Walk</h3>
+                    <p>Historical walking trail with harbor views.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Scenic Walk" />
+                  <div class="carousel-card-content">
+                    <h3>Scenic Walk</h3>
+                    <p>Beautiful coastal views and trails.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img
+                    src="/assets/manly-beach.jpeg"
+                    alt="Manly to Spit Bridge Walk"
+                  />
+                  <div class="carousel-card-content">
+                    <h3>Manly to Spit Bridge Coastal Walk</h3>
+                    <p>Scenic coastal walk with stunning views.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="North Head Walk" />
+                  <div class="carousel-card-content">
+                    <h3>North Head Walk</h3>
+                    <p>Historical walking trail with harbor views.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img
+                    src="/assets/manly-beach.jpeg"
+                    alt="Manly to Spit Bridge Walk"
+                  />
+                  <div class="carousel-card-content">
+                    <h3>Manly to Spit Bridge Coastal Walk</h3>
+                    <p>Scenic coastal walk with stunning views.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="North Head Walk" />
+                  <div class="carousel-card-content">
+                    <h3>North Head Walk</h3>
+                    <p>Historical walking trail with harbor views.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <label for="walks-s1" class="nav-dot"></label>
+              <label for="walks-s2" class="nav-dot"></label>
+            </div>
           </div>
         </div>
       </section>
@@ -129,33 +195,125 @@
       <section id="cycling" class="activity-section">
         <div class="section-container">
           <h2>Cycling</h2>
-          <div class="carousel-container">
-            <div class="carousel"></div>
-            <button class="carousel-button prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-button next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+          <div class="carousel-wrapper">
+            <input type="radio" name="cycling" id="cycling-s1" checked>
+            <input type="radio" name="cycling" id="cycling-s2">
+            
+            <div class="carousel-cards">
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Cycling Route 1" />
+                  <div class="carousel-card-content">
+                    <h3>Manly Beach Cycling Path</h3>
+                    <p>Scenic beachside cycling route.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="Cycling Route 2" />
+                  <div class="carousel-card-content">
+                    <h3>North Head Circuit</h3>
+                    <p>Challenging mountain biking trail.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Cycling Route 3" />
+                  <div class="carousel-card-content">
+                    <h3>Coastal Ride</h3>
+                    <p>Beautiful coastal cycling path.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Cycling Route 4" />
+                  <div class="carousel-card-content">
+                    <h3>City Connection</h3>
+                    <p>Urban cycling route to the city.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="Cycling Route 5" />
+                  <div class="carousel-card-content">
+                    <h3>Harbor Loop</h3>
+                    <p>Scenic harbor cycling experience.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Cycling Route 6" />
+                  <div class="carousel-card-content">
+                    <h3>Beach Hop Route</h3>
+                    <p>Connect multiple beaches by bike.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <label class="nav-dot" for="cycling-s1"></label>
+              <label class="nav-dot" for="cycling-s2"></label>
+            </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="picnic-barbecue"
-        style="background-color: #a8dadc"
-        class="activity-section"
-      >
+      <section id="picnic-barbecue" style="background-color: #a8dadc" class="activity-section">
         <div class="section-container">
           <h2>Picnic and Barbecue</h2>
-          <div class="carousel-container">
-            <div class="carousel"></div>
-            <button class="carousel-button prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-button next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+          <div class="carousel-wrapper">
+            <input type="radio" name="picnic" id="picnic-s1" checked>
+            <input type="radio" name="picnic" id="picnic-s2">
+            
+            <div class="carousel-cards">
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Picnic Spot 1" />
+                  <div class="carousel-card-content">
+                    <h3>Shelly Beach Reserve</h3>
+                    <p>Perfect picnic spot with ocean views.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="Picnic Spot 2" />
+                  <div class="carousel-card-content">
+                    <h3>North Head Sanctuary</h3>
+                    <p>Scenic picnic area with harbor views.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="BBQ Spot 1" />
+                  <div class="carousel-card-content">
+                    <h3>Little Manly Point</h3>
+                    <p>BBQ facilities with beach access.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="BBQ Spot 2" />
+                  <div class="carousel-card-content">
+                    <h3>East Esplanade</h3>
+                    <p>Waterfront BBQ and picnic area.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="Picnic Spot 3" />
+                  <div class="carousel-card-content">
+                    <h3>Manly Dam</h3>
+                    <p>Peaceful picnic spots by the water.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="BBQ Spot 3" />
+                  <div class="carousel-card-content">
+                    <h3>Q Station</h3>
+                    <p>Historic location with BBQ facilities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <label class="nav-dot" for="picnic-s1"></label>
+              <label class="nav-dot" for="picnic-s2"></label>
+            </div>
           </div>
         </div>
       </section>
@@ -163,14 +321,62 @@
       <section id="shopping" class="activity-section">
         <div class="section-container">
           <h2>Shopping</h2>
-          <div class="carousel-container">
-            <div class="carousel"></div>
-            <button class="carousel-button prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-button next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+          <div class="carousel-wrapper">
+            <input type="radio" name="shopping" id="shopping-s1" checked>
+            <input type="radio" name="shopping" id="shopping-s2">
+            
+            <div class="carousel-cards">
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Shopping 1" />
+                  <div class="carousel-card-content">
+                    <h3>Manly Corso</h3>
+                    <p>Main shopping strip with diverse stores.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="Shopping 2" />
+                  <div class="carousel-card-content">
+                    <h3>Market Lane</h3>
+                    <p>Boutique shopping experience.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Shopping 3" />
+                  <div class="carousel-card-content">
+                    <h3>Manly Wharf</h3>
+                    <p>Waterfront shopping precinct.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-group">
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Shopping 4" />
+                  <div class="carousel-card-content">
+                    <h3>Weekend Markets</h3>
+                    <p>Local artisan and fresh produce.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach1.jpg" alt="Shopping 5" />
+                  <div class="carousel-card-content">
+                    <h3>Surf Shops</h3>
+                    <p>Specialty surf wear and equipment.</p>
+                  </div>
+                </div>
+                <div class="carousel-card">
+                  <img src="/assets/manly-beach.jpeg" alt="Shopping 6" />
+                  <div class="carousel-card-content">
+                    <h3>Souvenir Stores</h3>
+                    <p>Local gifts and memorabilia.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <label class="nav-dot" for="shopping-s1"></label>
+              <label class="nav-dot" for="shopping-s2"></label>
+            </div>
           </div>
         </div>
       </section>
@@ -520,205 +726,18 @@
     </footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const video = document.getElementById("hero-video");
-        video.play().catch((error) => {
-          console.log("Auto-play was prevented");
-        });
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
+
         hamburger.addEventListener("click", () => {
           hamburger.classList.toggle("active");
           navMenu.classList.toggle("active");
         });
+
         document.querySelectorAll(".nav-menu li a").forEach((link) => {
           link.addEventListener("click", () => {
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
-          });
-        });
-        const activityData = {
-          "walks-hike": [
-            {
-              name: "Manly to Spit Bridge Coastal Walk",
-              description: "Scenic coastal walk with stunning views.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "North Head Sanctuary Loop",
-              description:
-                "Historic site with panoramic views of Sydney Harbour.",
-              image: "manly-beach1.jpg",
-            },
-            {
-              name: "Manly Dam Circuit",
-              description: "Bushland trail around Manly Dam.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "Cabbage Tree Bay Eco-Sculpture Walk",
-              description: "Short walk with underwater sculptures.",
-              image: "manly-beach1.jpg",
-            },
-            {
-              name: "Manly to Shelly Beach Walk",
-              description: "Easy coastal walk with beautiful views.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "Fairfax Walk",
-              description: "Easy loop walk with stunning ocean views.",
-              image: "manly-beach1.jpg",
-            },
-          ],
-          cycling: [
-            {
-              name: "Manly Beach Bike Path",
-              description: "Scenic ride along the beachfront.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "North Head Circuit",
-              description: "Challenging ride with panoramic views.",
-              image: "manly-beach1.jpg",
-            },
-            {
-              name: "Manly Dam Mountain Bike Trail",
-              description: "Popular mountain biking destination.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "Eastern Hill Bike Track",
-              description: "Family-friendly bike track with ocean views.",
-              image: "manly-beach1.jpg",
-            },
-            {
-              name: "Manly Lagoon Loop",
-              description: "Easy ride around Manly Lagoon.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "Bike to Dee Why",
-              description: "Coastal ride to neighboring Dee Why Beach.",
-              image: "manly-beach1.jpg",
-            },
-          ],
-          "picnic-barbecue": [
-            {
-              name: "Shelly Beach",
-              description:
-                "Popular spot with BBQ facilities and picnic tables.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "North Head Sanctuary",
-              description: "Scenic picnic spots with harbor views.",
-              image: "manly-beach1.jpg",
-            },
-            {
-              name: "Manly Dam Reserve",
-              description: "Picnic areas and BBQ facilities by the water.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "Little Manly Point Park",
-              description: "Quiet park with BBQs and harbor views.",
-              image: "manly-beach1.jpg",
-            },
-            {
-              name: "Forty Baskets Beach",
-              description: "Secluded beach with picnic facilities.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "Clontarf Reserve",
-              description: "Family-friendly park with BBQs and playground.",
-              image: "manly-beach1.jpg",
-            },
-          ],
-          shopping: [
-            {
-              name: "Manly Corso",
-              description: "Pedestrian mall with shops and cafes.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "Manly Wharf",
-              description: "Waterfront shopping and dining precinct.",
-              image: "manly-beach1.jpg",
-            },
-            {
-              name: "Manly Market Place",
-              description: "Fresh produce and gourmet food market.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "Manly Seaside Flea Market",
-              description: "Weekend market with unique finds.",
-              image: "manly-beach1.jpg",
-            },
-            {
-              name: "Manly Emporium",
-              description: "Boutique shopping center with local designers.",
-              image: "manly-beach.jpeg",
-            },
-            {
-              name: "The Manly Bookshop",
-              description: "Independent bookstore with a great selection.",
-              image: "manly-beach1.jpg",
-            },
-          ],
-        };
-        function createCarousel(sectionId) {
-          const carousel = document.querySelector(`#${sectionId} .carousel`);
-          const data = activityData[sectionId];
-          data.forEach((item) => {
-            const card = document.createElement("div");
-            card.className = "carousel-card";
-            card.innerHTML = `
-          <img src="/assets/${item.image}" alt="${item.name}">
-          <div class="carousel-card-content">
-            <h3>${item.name}</h3>
-            <p>${item.description}</p>
-          </div>
-        `;
-            carousel.appendChild(card);
-          });
-          const prevButton = document.querySelector(`#${sectionId} .prev`);
-          const nextButton = document.querySelector(`#${sectionId} .next`);
-          let currentIndex = 0;
-          function updateCarousel() {
-            const cardWidth =
-              carousel.querySelector(".carousel-card").offsetWidth + 20;
-            carousel.style.transform = `translateX(-${
-              currentIndex * cardWidth
-            }px)`;
-          }
-          prevButton.addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + data.length) % data.length;
-            updateCarousel();
-          });
-          nextButton.addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % data.length;
-            updateCarousel();
-          });
-        }
-        createCarousel("walks-hike");
-        createCarousel("cycling");
-        createCarousel("picnic-barbecue");
-        createCarousel("shopping");
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            if (this.getAttribute("href") === "#top") {
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              });
-            } else {
-              document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth",
-              });
-            }
           });
         });
       });

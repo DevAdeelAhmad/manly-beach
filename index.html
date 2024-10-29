@@ -28,7 +28,7 @@
           <span></span>
         </div>
         <ul class="nav-menu">
-          <li><a href="#top" id="home-link">Home</a></li>
+          <li><a href="#top">Home</a></li>
           <li><a href="principal-places.html">Places to Visit</a></li>
           <li><a href="principal-activities.html">Activities</a></li>
           <li><a href="#">Events</a></li>
@@ -242,10 +242,6 @@
     </footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const video = document.getElementById("hero-video");
-        video.play().catch((error) => {
-          console.log("Auto-play was prevented");
-        });
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
         hamburger.addEventListener("click", () => {
@@ -256,29 +252,6 @@
           link.addEventListener("click", () => {
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
-          });
-        });
-        const homeLink = document.getElementById("home-link");
-        homeLink.addEventListener("click", function (e) {
-          e.preventDefault();
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            if (this.getAttribute("href") === "#top") {
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              });
-            } else {
-              document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth",
-              });
-            }
           });
         });
       });
